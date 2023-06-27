@@ -1,0 +1,41 @@
+body{
+    background-color: #FFFCED;
+}
+
+.HomeScreen{
+    position: relative;
+    z-index: 0;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+    height: 85vh;
+}
+
+.logo{
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(152, 0, 0, 0.5);
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    color: black;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: rgba(163, 34, 34, 0.5);
+}
