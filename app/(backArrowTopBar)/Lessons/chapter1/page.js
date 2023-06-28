@@ -2,6 +2,7 @@ import React from 'react';
 import { chapter1 } from "./../chapters.js"
 import BackArrowLayout from "../../BackArrowTopBar.js";
 import Link from 'next/link';
+import "./../chapter.css"
 
 export default function Page(){
     const list = chapter1.map(chapter =>
