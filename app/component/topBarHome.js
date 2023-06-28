@@ -1,6 +1,8 @@
 'use client'
 
+import React from 'react'
 import './component.css'
+import Image from 'next/image'
 
 export default function TopBarHome(){
 
@@ -12,7 +14,7 @@ export default function TopBarHome(){
     return(
         <div className="topBar">
             <h1 className = "TopBarTitle" >Ear Trainer</h1>
-            <img src = "settings.png" className = "settings" onClick={onClick}/>
+            <Image alt="settings" src = "/settings.png" width={65} height={65} className = "settings" onClick={onClick}/>
         </div>
     );
 }

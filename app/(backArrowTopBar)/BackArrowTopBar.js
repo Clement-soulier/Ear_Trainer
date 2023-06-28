@@ -1,5 +1,7 @@
 'use client'
 
+import React from 'react';
+import Image from 'next/image'
 import "./BackArrowTopBar.css"
 import { useRouter } from 'next/navigation'
 
@@ -9,9 +11,9 @@ export default function BackArrowTopBar({title}){
     return(
         <>
         <div className="BackArrowTopBar">
-            <img alt="BackArrow" src = "back-Arrow.png" className = "backArrow" onClick={() => router.back()}/>
+            <Image alt="BackArrow" src = "/back-Arrow.png" width={50} height={50} className = "backArrow" onClick={() => router.back()}/>
             <h1 className = "BackArrowTopBarTitle" >{title}</h1>
-            <img alt="settings" src = "settings.png" className = "settings" />
+            <Image alt="settings" src = "/settings.png" width={65} height={65} className = "settings" />
         </div>
         </>
     );

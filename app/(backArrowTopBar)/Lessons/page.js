@@ -1,3 +1,4 @@
+import React from 'react';
 import { chapters } from "./chapters.js";
 import BackArrowLayout from "../BackArrowTopBar";
 import './chapter.css'

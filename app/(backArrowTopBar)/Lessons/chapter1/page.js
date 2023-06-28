@@ -1,3 +1,4 @@
+import React from 'react';
 import { chapter1 } from "./../chapters.js"
 import BackArrowLayout from "../../BackArrowTopBar.js";
 import Link from 'next/link';

@@ -1,3 +1,4 @@
+import React from 'react';
 import BackArrowLayout from '../BackArrowTopBar';
 import './about.css'
 
