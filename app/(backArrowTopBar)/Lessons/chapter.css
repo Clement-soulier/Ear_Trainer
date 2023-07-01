@@ -46,8 +46,50 @@
     left: 15px;
     top: -55px;
     font-family: 'Gothic A1', sans-serif;
-    font-size: 15px;
     font-weight: normal;
+    font-size: 15px;
+}
+
+@media (max-width: 375px){
+    .chapterDescription{
+        position: relative;
+        left: 15px;
+        top: -25px;
+        font-family: 'Gothic A1', sans-serif;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .chapterName{
+        position: relative;
+        left: 10px;
+        top: -15px;
+        font-family: 'Gothic A1', sans-serif;
+        font-weight: Bold;  
+        display: block;
+        width: 260px;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 320px){
+    .chapterDescription{
+        position: relative;
+        left: 15px;
+        top: -15px;
+        font-family: 'Gothic A1', sans-serif;
+        font-weight: normal;
+        font-size: 11px;
+    }
+    .chapterName{
+        position: relative;
+        left: 10px;
+        top: -12px;
+        font-family: 'Gothic A1', sans-serif;
+        font-weight: Bold;
+        display: block;
+        width: 224px;
+        font-size: 17px;
+    }
 }
 
 .progression{

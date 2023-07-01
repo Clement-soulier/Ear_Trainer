@@ -1,7 +1,8 @@
 .BackArrowTopBar{
     display: flex;
     align-items: flex-end;
-    position: absolute;
+    position: fixed;
+    z-index: 5;
     top: 0px;
     left: 0px;
     background-color: #980000;
@@ -30,4 +31,24 @@
 .settings{
     position: absolute;
     right: 10px;
+}
+
+@media (max-width: 375px){
+    .BackArrowTopBarTitle{
+        position: absolute;
+        left: 55px;
+        bottom: -5px;
+        font-family: 'Gothic A1', sans-serif;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 320px){
+    .BackArrowTopBarTitle{
+        position: absolute;
+        left: 55px;
+        bottom: 1px;
+        font-family: 'Gothic A1', sans-serif;
+        font-size: 20px;
+    }
 }
