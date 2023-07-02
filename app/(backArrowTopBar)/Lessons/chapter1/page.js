@@ -9,7 +9,7 @@ export default function Page(){
         if(chapter.exam){
             return(
             <li key={chapter.id} className='listItem'>
-                <Link href={""}>
+                <Link href={"/InLesson"}>
                     <h1 className='chapterId'>exam {chapter.id - 100}</h1>
                     <h2 className='chapterName'>{chapter.name}</h2>
                     <div className='progression'>00%</div>
