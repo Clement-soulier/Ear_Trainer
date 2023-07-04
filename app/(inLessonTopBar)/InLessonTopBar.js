@@ -12,7 +12,6 @@ export default function InLessonTopBar({title, description}){
             <Image alt="BackArrow" src = "/back-Arrow.png" width={50} height={50} className = "backArrow" onClick={() => router.back()}/>
             <h1 className='InLessonTopBarTitle'>{title}</h1>
             <h2 className='InLessonTopBarDescription'>{description}</h2>
-            <Image alt="settings" src = "/settings.png" width={65} height={65} className = "settings" />
         </div>
     ); 
 }

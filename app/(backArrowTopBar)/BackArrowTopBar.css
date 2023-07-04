@@ -13,7 +13,7 @@
 
 .backArrow:hover{
     cursor: pointer;
-    background-color: rgba(185, 62, 62, 0.5);;
+    background-color: rgba(185, 62, 62, 0.5);
 }
 
 .backArrow{
@@ -26,11 +26,6 @@
     left: 55px;
     bottom: -15px;
     font-family: 'Gothic A1', sans-serif;
-}
-
-.settings{
-    position: absolute;
-    right: 10px;
 }
 
 @media (max-width: 375px){

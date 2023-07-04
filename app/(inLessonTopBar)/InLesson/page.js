@@ -1,5 +1,5 @@
 import React from 'react';
-import InLessonTopBar from '../inLessonTopBar';
+import InLessonTopBar from '../InLessonTopBar.js';
 import Image from 'next/image'
 import "./InLesson.css"
 
