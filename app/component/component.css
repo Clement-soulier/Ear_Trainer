@@ -104,3 +104,18 @@
     cursor: pointer;
     
 }
+
+@media (min-width: 425px) {
+    .settingsWindow{
+        position: relative;
+        z-index: 15;
+        width: 335px;
+        height: 500px;
+        font-family: 'Gothic A1', sans-serif;
+        border: none;
+        border-radius: 25px;
+        background-color: #FFFCED;
+        display: flex;
+        justify-content: center;
+    }
+}

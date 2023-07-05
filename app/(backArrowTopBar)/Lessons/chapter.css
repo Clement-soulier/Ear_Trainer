@@ -109,3 +109,16 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+@media (min-width: 425px) {
+    .listItem{
+        position: relative;
+        left: 0px;
+        width: 380px;
+        height: 90px;
+        background-color: rgba(152, 0, 0, 0.5);
+        list-style: none;
+        border: none;
+        border-radius: 25px;
+    }
+}
