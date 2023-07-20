@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import TopBarHome from "./component/topBarHome.js";
 import './home.css';
