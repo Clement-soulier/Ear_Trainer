@@ -3,6 +3,7 @@ import React from 'react';
 import './home.css';
 import Cookies from 'js-cookie';
 import { useEffect } from 'react';
+import { AppContextProvider } from './component/context';
 
 function cookiesExistenceCheck(){
   return (
@@ -27,12 +28,15 @@ function cookiesHandler(){
 }
 
 export default function RootLayout({children}) {
-    useEffect(() => {cookiesHandler();}, []);
-    return (
+  useEffect(() => {cookiesHandler();}, []);
+
+  return (
+    <AppContextProvider>
       <html lang="en">
         <body>
-            {children}
+          {children}
         </body>
       </html>
-    )
-  }
+    </AppContextProvider>
+  )
+}
