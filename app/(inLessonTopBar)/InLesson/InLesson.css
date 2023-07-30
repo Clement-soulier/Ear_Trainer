@@ -61,3 +61,59 @@ button:hover{
         background-color: rgba(152, 0, 0, 0.5);
     }
 }
+
+.Red{
+    background-color: rgba(152, 0, 0, 0.5);
+}
+
+.Red:hover{
+    background-color: rgba(163, 34, 34, 0.5);
+}
+
+.Blue{
+    background-color: rgba(4, 83, 179, 0.5);
+}
+
+.Blue:hover{
+    background-color: rgba(97, 137, 185, 0.5);
+}
+
+.Green{
+    background-color: rgba(63, 174, 32, 0.5);
+}
+
+.Green:hover{
+    background-color: rgba(105, 176, 85, 0.5);
+}
+
+.Yellow{
+    background-color: rgba(246, 196, 16, 0.5);
+}
+
+.Yellow:hover{
+    background-color: rgba(245, 214, 105, 0.5);
+}
+
+.Orange{
+    background-color: rgba(244, 83, 14, 0.5);
+}
+
+.Orange:hover{
+    background-color: rgba(248, 141, 96, 0.5);
+}
+
+.Pink{
+    background-color: rgba(218, 76, 154, 0.5);
+}
+
+.Pink:hover{
+    background-color: rgba(215, 130, 177, 0.5);
+}
+
+.Purple{
+    background-color: rgba(138, 2, 165, 0.5);
+}
+
+.Purple:hover{
+    background-color: rgba(166, 89, 181, 0.5);
+}

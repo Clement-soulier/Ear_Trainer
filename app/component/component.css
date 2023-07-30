@@ -24,7 +24,6 @@
 
 .settings:hover{
     cursor: pointer;
-    background-color: rgba(185, 62, 62, 0.5);
 }
 
 .settingsBackground{
@@ -118,4 +117,88 @@
         display: flex;
         justify-content: center;
     }
+}
+
+.RedT{
+    background-color: rgba(152, 0, 0);
+}
+
+.BlueT{
+    background-color: rgba(4, 83, 179);
+}
+
+.GreenT{
+    background-color: rgba(63, 174, 32);
+}
+
+.YellowT{
+    background-color: rgba(246, 196, 16);
+}
+
+.OrangeT{
+    background-color: rgba(244, 83, 14);
+}
+
+.PinkT{
+    background-color: rgba(218, 76, 154);
+}
+
+.PurpleT{
+    background-color: rgba(138, 2, 165);
+}
+
+.RedBack{
+    background-color: rgba(152, 0, 0, 0.2);
+}
+
+.BlueBack{
+    background-color: rgba(4, 83, 179, 0.2);
+}
+
+.GreenBack{
+    background-color: rgba(63, 174, 32, 0.2);
+}
+
+.YellowBack{
+    background-color: rgba(246, 196, 16, 0.2);
+}
+
+.OrangeBack{
+    background-color: rgba(244, 83, 14, 0.2);
+}
+
+.PinkBack{
+    background-color: rgba(218, 76, 154, 0.2);
+}
+
+.PurpleBack{
+    background-color: rgba(138, 2, 165, 0.2);
+}
+
+.RedButton{
+    background-color: rgba(152, 0, 0, 0.5);
+}
+
+.BlueButton{
+    background-color: rgba(4, 83, 179, 0.5);
+}
+
+.GreenButton{
+    background-color: rgba(63, 174, 32, 0.5);
+}
+
+.YellowButton{
+    background-color: rgba(246, 196, 16, 0.5);
+}
+
+.OrangeButton{
+    background-color: rgba(244, 83, 14, 0.5);
+}
+
+.PinkButton{
+    background-color: rgba(218, 76, 154, 0.5);
+}
+
+.PurpleButton{
+    background-color: rgba(138, 2, 165, 0.5);
 }

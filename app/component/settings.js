@@ -8,12 +8,15 @@ import Cookies from 'js-cookie';
 
 
 function ButtonSettings({index, defaultOption, handler}){
+
+    const { Color } = useContext(ColorContext);
+
     const list = optionsList[index].list.map((option, i) =>(
         <option key={i} value={option}>{option}</option>
         ));
         
-        return(<li key ={index} className = "settingsButtonBackground">
-            <div className = "settingsButton">
+        return(<li key ={index} className = {`settingsButtonBackground ${Color}Back`}>
+            <div className = {`settingsButton ${Color}Button`}>
                 <h3 className = "settingsButtonTitle">{optionsList[index].name}</h3>
                 <select className = "settingsButtonSelection" value={defaultOption} onChange={handler}>
                     {list}
@@ -22,7 +25,7 @@ function ButtonSettings({index, defaultOption, handler}){
     </li>);
 }
 
-export default function Settings({display, handleClick}){//mettre les handler regarder le proto
+export default function Settings({display, handleClick}){
 
     const { Language, setLanguage } = useContext(LanguageContext);
     const { Theme, setTheme } = useContext(ThemeContext);
@@ -32,25 +35,25 @@ export default function Settings({display, handleClick}){//mettre les handler re
     const LanguageHandler = (event) => {
         const selectedValue = event.target.value;
         setLanguage(selectedValue);
-        Cookies.set("Language", selectedValue);
+        Cookies.set("Language", selectedValue, {expires: 365});
     }
 
     const ThemeHandler = (event) => {
         const selectedValue = event.target.value;
         setTheme(selectedValue);
-        Cookies.set("Theme", selectedValue);
+        Cookies.set("Theme", selectedValue, {expires: 365});
     }
 
     const ColorHandler = (event) => {
         const selectedValue = event.target.value;
         setColor(selectedValue);
-        Cookies.set("Color", selectedValue);
+        Cookies.set("Color", selectedValue, {expires: 365});
     }
 
     const NotationHandler = (event) => {
         const selectedValue = event.target.value;
         setNotation(selectedValue);
-        Cookies.set("Notation", selectedValue);
+        Cookies.set("Notation", selectedValue, {expires: 365});
     }
 
     if(display){

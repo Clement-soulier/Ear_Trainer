@@ -1,14 +1,19 @@
-import React from 'react';
+'use client'
+import React, { useContext } from 'react';
 import { chapter2 } from "./../chapters.js"
+import { ColorContext } from '../../../component/context.js';
 import BackArrowLayout from "../../BackArrowTopBar.js";
 import Link from 'next/link';
 import './../chapter.css';
 
 export default function Page(){
+
+    const { Color } = useContext(ColorContext);
+
     const list = chapter2.map(chapter =>{
         if(chapter.exam){
             return(
-            <li key={chapter.id} className='listItem'>
+            <li key={chapter.id} className={`listItem ${Color}`}>
                 <Link href={""}>
                     <h1 className='chapterId'>exam {chapter.id - 100}</h1>
                     <h2 className='chapterName'>{chapter.name}</h2>
@@ -17,7 +22,7 @@ export default function Page(){
             </li>);
         }
         else{
-            return(<li key={chapter.id} className="listItem">
+            return(<li key={chapter.id} className={`listItem ${Color}`}>
             <Link href={""}>
                 <h1 className="chapterId">lesson {chapter.id}</h1>
                 <h2 className="chapterName">{chapter.name}</h2>

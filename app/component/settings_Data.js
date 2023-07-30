@@ -6,7 +6,7 @@ export const optionsList = [{
     list:["Light", "Dark"]
 },{
     name: "Color",
-    list: ["Red", "Blue", "Yellow", "Orange", "Pink", "Purple"]
+    list: ["Red", "Blue","Green", "Yellow", "Orange", "Pink", "Purple"]
 },{
     name: "Notation",
     list: ["Alphabetic", "Syllabic"]}];

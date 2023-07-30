@@ -4,6 +4,7 @@ import './home.css';
 import Cookies from 'js-cookie';
 import { useEffect } from 'react';
 import { AppContextProvider } from './component/context';
+import { StrictMode } from 'react';
 
 function cookiesExistenceCheck(){
   return (
@@ -15,10 +16,10 @@ function cookiesExistenceCheck(){
 }
 
 function createDefaultCookies() {
-  Cookies.set('Language', 'English');
-  Cookies.set('Theme', 'Light');
-  Cookies.set('Color', 'Red');
-  Cookies.set('Notation', 'Alphabetic');
+  Cookies.set('Language', 'English', {expires: 365});
+  Cookies.set('Theme', 'Light', {expires: 365});
+  Cookies.set('Color', 'Red', {expires: 365});
+  Cookies.set('Notation', 'Alphabetic', {expires: 365});
 }
 
 function cookiesHandler(){
@@ -31,6 +32,7 @@ export default function RootLayout({children}) {
   useEffect(() => {cookiesHandler();}, []);
 
   return (
+    <StrictMode>
     <AppContextProvider>
       <html lang="en">
         <body>
@@ -38,5 +40,6 @@ export default function RootLayout({children}) {
         </body>
       </html>
     </AppContextProvider>
+    </StrictMode>
   )
 }
