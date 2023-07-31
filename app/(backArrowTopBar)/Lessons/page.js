@@ -13,7 +13,7 @@ export default function Page(){
 const list = chapters.map(chapter =>
     <li key={chapter.id} className={`listItem ${Color}`}>
         <Link href={"/Lessons/chapter" + chapter.id}>
-            <h1 className="chapterId">chapter {chapter.id}</h1>
+            <h1 className="chapterId">Chapter {chapter.id}</h1>
             <h2 className="chapterName">{chapter.name}</h2>
             <h3 className="chapterDescription">{chapter.description}</h3>
             <div className="progression">00%</div>

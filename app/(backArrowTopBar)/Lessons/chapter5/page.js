@@ -15,8 +15,10 @@ export default function Page(){
             return(
             <li key={chapter.id} className={`listItem ${Color}`}>
                 <Link href={""}>
-                    <h1 className='chapterId'>exam {chapter.id - 100}</h1>
-                    <h2 className='chapterName'>{chapter.name}</h2>
+                    <h1 className='chapterId'>Exam {chapter.id - 100}</h1>
+                    <div className='DivChapterName'>
+                        <h2 className='chapterName'>{chapter.name}</h2>
+                    </div>
                     <div className='progression'>00%</div>
                 </Link>
             </li>);
@@ -24,8 +26,10 @@ export default function Page(){
         else{
             return(<li key={chapter.id} className={`listItem ${Color}`}>
             <Link href={""}>
-                <h1 className="chapterId">lesson {chapter.id}</h1>
-                <h2 className="chapterName">{chapter.name}</h2>
+                <h1 className="chapterId">Lesson {chapter.id}</h1>
+                <div className='DivChapterName'>
+                    <h2 className="chapterName">{chapter.name}</h2>
+                </div>
                 <div className="progression">00%</div>
             </Link>
         </li>);

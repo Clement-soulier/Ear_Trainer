@@ -25,7 +25,7 @@
 
 .chapterId{
     position: relative;
-    top: -10px;
+    top: -9px;
     left: 10px;
     font-weight: normal;
     font-family: 'Gothic A1', sans-serif;
@@ -35,25 +35,25 @@
 .chapterName{
     position: relative;
     left: 10px;
-    top: -32px;
+    top: -22px;
     font-family: 'Gothic A1', sans-serif;
     font-weight: Bold;
-    font-size: 30px;
+    font-size: 23px;
 }
 
 .chapterDescription{
     position: relative;
-    left: 15px;
-    top: -55px;
+    left: 12px;
+    top: -33px;
     font-family: 'Gothic A1', sans-serif;
     font-weight: normal;
     font-size: 15px;
 }
 
-@media (max-width: 375px){
+@media (max-width: 425px){
     .chapterDescription{
         position: relative;
-        left: 15px;
+        left: 12px;
         top: -25px;
         font-family: 'Gothic A1', sans-serif;
         font-weight: normal;
@@ -74,7 +74,7 @@
 @media (max-width: 320px){
     .chapterDescription{
         position: relative;
-        left: 15px;
+        left: 12px;
         top: -15px;
         font-family: 'Gothic A1', sans-serif;
         font-weight: normal;
@@ -88,7 +88,10 @@
         font-weight: Bold;
         display: block;
         width: 224px;
-        font-size: 17px;
+        font-size: 16px;
+    }
+    .DivChapterName{
+        width: 275px;
     }
 }
 
@@ -108,6 +111,10 @@
 a{
     text-decoration: none;
     color: inherit;
+}
+
+.DivChapterName{
+    width:320px;
 }
 
 @media (min-width: 425px) {
