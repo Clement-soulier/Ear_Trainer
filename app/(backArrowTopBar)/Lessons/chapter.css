@@ -1,3 +1,35 @@
+.BackgroundChapter{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 905px;
+}
+
+.one{
+    height: 888px;
+}
+
+.two{
+    height: 895;
+}
+
+.three{
+    height: 1655px;
+}
+
+.four{
+    height: 1655px;
+}
+
+.five{
+    height: 2770px;
+}
+
+.six{
+    height: 2770px;
+}
+
 .chaptersList{
     display: flex;
     flex-direction:column;
@@ -98,7 +130,6 @@
 .progression{
     display: flex;
     position: absolute;
-    background-color: #FFFCED;
     border-radius: 100px;
     width: 50px;
     height: 50px;
@@ -128,6 +159,16 @@ a{
         border: none;
         border-radius: 25px;
     }
+}
+
+.Dark{
+    background-color: black;
+    color: white;
+}
+
+.Light{
+    background-color: #FFFCED;
+    color: black;
 }
 
 .Red{

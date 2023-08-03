@@ -2,26 +2,35 @@ import React, { createContext, useState, useEffect } from 'react';
 import Cookies from 'js-cookie';
 
 export const LanguageContext = createContext();
-export const ThemeContext = createContext(Cookies.get("Theme"));
+export const ThemeContext = createContext();
 export const ColorContext = createContext();
-export const NotationContext = createContext(Cookies.get("Notation"));
+export const NotationContext = createContext();
 
 export function AppContextProvider ({children}){
-    const [Language, setLanguage] = useState(Cookies.get('Language'));
-    const [Theme, setTheme] = useState(Cookies.get("Theme"));
+    const [Language, setLanguage] = useState(null);
+    const [Theme, setTheme] = useState(null);
     const [Color, setColor] = useState(null);
-    const [Notation, setNotation] = useState(Cookies.get("Notation"));
+    const [Notation, setNotation] = useState(null);
 
     useEffect(() => {
+        const fetchThemeFromCookie = async () => {
+            try{
+                const themeFromCookie = await Cookies.get("Theme");
+                setTheme(themeFromCookie);
+            } catch (error){
+                console.error("Error cannot fetch Theme Cookie");
+            }
+        };
         const fetchColorFromCookie = async () => {
             try {
                 const colorFromCookie = await Cookies.get("Color");
                 setColor(colorFromCookie);
             } catch (error) {
-                console.error("Error cannot fetch Color Cookies")
+                console.error("Error cannot fetch Color Cookie");
             }
         };
 
+        fetchThemeFromCookie();
         fetchColorFromCookie();
     }, []);
 

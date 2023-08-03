@@ -1,7 +1,7 @@
 'use client'
 import React, { useContext } from 'react';
 import { chapter2 } from "./../chapters.js"
-import { ColorContext } from '../../../component/context.js';
+import { ThemeContext, ColorContext } from '../../../component/context.js';
 import BackArrowLayout from "../../BackArrowTopBar.js";
 import Link from 'next/link';
 import './../chapter.css';
@@ -9,6 +9,7 @@ import './../chapter.css';
 export default function Page(){
 
     const { Color } = useContext(ColorContext);
+    const { Theme } = useContext(ThemeContext);
 
     const list = chapter2.map(chapter =>{
         if(chapter.exam){
@@ -19,7 +20,7 @@ export default function Page(){
                     <div className='DivChapterName'>
                         <h2 className='chapterName'>{chapter.name}</h2>
                     </div>
-                    <div className='progression'>00%</div>
+                    <div className={`progression ${Theme}`}>00%</div>
                 </Link>
             </li>);
         }
@@ -30,7 +31,7 @@ export default function Page(){
                 <div className='DivChapterName'>
                     <h2 className="chapterName">{chapter.name}</h2>
                 </div>
-                <div className="progression">00%</div>
+                <div className={`progression ${Theme}`}>00%</div>
             </Link>
         </li>);
         }
@@ -38,10 +39,12 @@ export default function Page(){
 
     return(
         <>
-        <BackArrowLayout title={"Sharps and flats"} />
-        <ul className="chaptersList">
-            {list}
-        </ul>
+        <div className={`BackgroundChapter two ${Theme}`}>
+            <BackArrowLayout title={"Sharps and flats"} />
+            <ul className="chaptersList">
+                {list}
+            </ul>
+        </div>
         </>
     );
 }

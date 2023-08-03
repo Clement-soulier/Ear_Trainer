@@ -1,3 +1,11 @@
+.Background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .AboutText:nth-child(1){
     margin-top: 115px;
 }
@@ -8,4 +16,14 @@
     font-family: 'Gothic A1', sans-serif;
     font-weight: bold;
     font-size: 20px;
+}
+
+.Dark{
+    background-color: black;
+    color: white;
+}
+
+.Light{
+    background-color: #FFFCED;
+    color: black;
 }

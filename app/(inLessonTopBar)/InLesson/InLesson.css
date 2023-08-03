@@ -23,14 +23,9 @@
     width: 250px;
     height: 50px;
     border-radius: 25px;
-    color: black;
     font-family: 'Gothic A1', sans-serif;
     font-size: 25px;
     text-decoration: none;
-}
-
-button:hover{
-    background-color: rgba(163, 34, 34, 0.5);
 }
 
 .bottomScreen{
@@ -50,6 +45,16 @@ button:hover{
     height: 35px;
     border: none;
     background-color: rgba(152, 0, 0, 0.5);
+}
+
+.Dark .toneButton,
+.Dark .middleButton{
+    color: white;
+}
+
+.Light .toneButton,
+.Light .middleButton{
+    color: black;
 }
 
 @media (min-width: 768px) {

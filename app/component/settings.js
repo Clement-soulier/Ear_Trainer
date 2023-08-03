@@ -9,6 +9,7 @@ import Cookies from 'js-cookie';
 
 function ButtonSettings({index, defaultOption, handler}){
 
+    const { Theme } = useContext(ThemeContext);
     const { Color } = useContext(ColorContext);
 
     const list = optionsList[index].list.map((option, i) =>(
@@ -18,7 +19,7 @@ function ButtonSettings({index, defaultOption, handler}){
         return(<li key ={index} className = {`settingsButtonBackground ${Color}Back`}>
             <div className = {`settingsButton ${Color}Button`}>
                 <h3 className = "settingsButtonTitle">{optionsList[index].name}</h3>
-                <select className = "settingsButtonSelection" value={defaultOption} onChange={handler}>
+                <select className = {`settingsButtonSelection ${Theme}`} value={defaultOption} onChange={handler}>
                     {list}
                 </select>
             </div>
@@ -56,10 +57,19 @@ export default function Settings({display, handleClick}){
         Cookies.set("Notation", selectedValue, {expires: 365});
     }
 
+    function crossSrc(Theme){
+        if(Theme == "Dark"){
+            return "/cross_dark.png";
+        }
+        else{
+            return "/cross_light.png";
+        }
+    }
+
     if(display){
         return(
             <div className = "settingsBackground">
-                <div className = "settingsWindow">
+                <div className = {`settingsWindow ${Theme}`}>
                     <h2 className = "settingsTitle">Settings</h2>
                     <ul className = "settingsButtonList">
                         <ButtonSettings index = {0} defaultOption={Language} handler={LanguageHandler}/>
@@ -67,7 +77,7 @@ export default function Settings({display, handleClick}){
                         <ButtonSettings index = {2} defaultOption={Color} handler={ColorHandler}/>
                         <ButtonSettings index = {3} defaultOption={Notation} handler={NotationHandler}/>
                     </ul>
-                    <Image className='cross' alt="back Cross" src={"/cross_black.png"} width={100} height={100} onClick={handleClick}/>
+                    <Image className='cross' alt="back Cross" src={crossSrc(Theme)} width={100} height={100} onClick={handleClick}/>
                 </div>
             </div>
         );

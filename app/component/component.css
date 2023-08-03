@@ -48,6 +48,7 @@
     border: none;
     border-radius: 25px;
     background-color: #FFFCED;
+    border: 1px solid #FFFCED;
     display: flex;
     justify-content: center;
 }
@@ -111,12 +112,22 @@
         width: 335px;
         height: 500px;
         font-family: 'Gothic A1', sans-serif;
-        border: none;
+        border: 1px solid #FFFCED;
         border-radius: 25px;
         background-color: #FFFCED;
         display: flex;
         justify-content: center;
     }
+}
+
+.Dark{
+    background-color: black;
+    color: white;
+}
+
+.Light{
+    background-color: #FFFCED;
+    color: black;
 }
 
 .RedT{
