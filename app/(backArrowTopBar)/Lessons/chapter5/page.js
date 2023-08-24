@@ -1,10 +1,11 @@
 'use client'
 import React, { useContext } from 'react';
 import { chapter5 } from "./../chapters.js"
-import { LanguageContext, ThemeContext, ColorContext } from '../../../component/context.js';
+import { LanguageContext, ThemeContext, ColorContext, NotationContext } from '../../../component/context.js';
 import BackArrowLayout from "../../BackArrowTopBar.js";
 import Link from 'next/link';
 import text from "/text.JSON"
+import notation from "/notation.json"
 import './../chapter.css';
 
 export default function Page(){
@@ -12,6 +13,7 @@ export default function Page(){
     const { Language } = useContext(LanguageContext);
     const { Color } = useContext(ColorContext);
     const { Theme } = useContext(ThemeContext);
+    const { Notation } = useContext(NotationContext);
 
     const list = chapter5.map(chapter =>{
         if(chapter.exam){
@@ -31,7 +33,7 @@ export default function Page(){
             <Link href={""}>
                 <h1 className="chapterId">{text[Language].lesson} {chapter.id}</h1>
                 <div className='DivChapterName'>
-                    <h2 className="chapterName">{chapter.name}</h2>
+                    <h2 className="chapterName">{notation[Notation][chapter.name]}</h2>
                 </div>
                 <div className={`progression ${Theme}`}>00%</div>
             </Link>

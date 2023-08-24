@@ -31,27 +31,27 @@ export const chapters =[{
 export const chapter1 =[{
     id:0,
     exam: false,
-    name:"Do3, Mi3"
+    name:"chapter1-lesson1"
 },{
     id:1,
     exam: false,
-    name:"Sol3"
+    name:"chapter1-lesson2"
 },{
     id:2,
     exam: false,
-    name: "Si3"
+    name: "chapter1-lesson3"
 },{
     id:3,
     exam: false,
-    name: "Re3"
+    name: "chapter1-lesson4"
 },{
     id:4,
     exam: false,
-    name:"Fa3"
+    name:"chapter1-lesson5"
 },{
     id:5,
     exam: false,
-    name:"La3"
+    name:"chapter1-lesson6"
 }, {
     id:101,
     exam:true,
@@ -65,19 +65,19 @@ export const chapter2 = [{
 },{
     id:1,
     exam:false,
-    name:"Do3#, Sol3#",
+    name:"chapter2-lesson1",
 },{
     id:2,
     exam:false,
-    name:"Si3#"
+    name:"chapter2-lesson2"
 },{
     id:3,
     exam:false,
-    name:"Re3#"
+    name:"chapter2-lesson3"
 },{
     id:4,
     exam:false,
-    name:"La3#"
+    name:"chapter2-lesson4"
 },{
     id:101,
     exam:true,
@@ -91,27 +91,27 @@ export const chapter2 = [{
 export const chapter3 = [{
     id:0,
     exam:false,
-    name:"Do2, Mi2"
+    name:"chapter3-lesson1"
 },{
     id:1,
     exam:false,
-    name:"Sol2"
+    name:"chapter3-lesson2"
 },{
    id:2,
    exam:false,
-   name:"Si2" 
+   name:"chapter3-lesson3" 
 },{
     id:3,
     exam:false,
-    name:"Re2"
+    name:"chapter3-lesson4"
 },{
     id:4,
     exam:false,
-    name:"Fa2"
+    name:"chapter3-lesson5"
 },{
     id:5,
     exam:false,
-    name:"La2"
+    name:"chapter3-lesson6"
 },{
     id:101,
     exam:true,
@@ -123,19 +123,19 @@ export const chapter3 = [{
 },{
     id:6,
     exam:false,
-    name:"Do2#"
+    name:"chapter3-lesson7"
 },{
     id:7,
     exam:false,
-    name:"Si2#"
+    name:"chapter3-lesson8"
 },{
     id:8,
     exam:false,
-    name:"Re2#"
+    name:"chapter3-lesson9"
 },{
     id:9,
     exam:false,
-    name:"La2#"
+    name:"chapter3-lesson10"
 },{
     id:103,
     exam:true,
@@ -149,27 +149,27 @@ export const chapter3 = [{
 export const chapter4 = [{
     id:0,
     exam:false,
-    name:"Do4, Mi4"
+    name:"chapter4-lesson1"
 },{
     id:1,
     exam:false,
-    name:"Sol4"
+    name:"chapter4-lesson2"
 },{
     id:2,
     exam:false,
-    name:"Si4"
+    name:"chapter4-lesson3"
 },{
     id:3,
     exam:false,
-    name:"Re4"
+    name:"chapter4-lesson4"
 },{
     id:4,
     exam:false,
-    name:"Fa4"
+    name:"chapter4-lesson5"
 },{
     id:5,
     exam:false,
-    name:"La4"
+    name:"chapter4-lesson6"
 },{
     id:101,
     exam:true,
@@ -181,19 +181,19 @@ export const chapter4 = [{
 },{
     id:6,
     exam:false,
-    name:"Do4# et Sol4#"
+    name:"chapter4-lesson7"
 },{
     id:7,
     exam:false,
-    name:"Si4#"
+    name:"chapter4-lesson8"
 },{
     id:8,
     exam:false,
-    name:"Re4#"
+    name:"chapter4-lesson9"
 },{
     id:9,
     exam:false,
-    name:"La4#"
+    name:"chapter4-lesson10"
 },{
     id:103,
     exam:true,
@@ -211,27 +211,27 @@ export const chapter5 = [{
 },{
     id:1,
     exam:false,
-    name:"MDo3, MSol3"
+    name:"chapter5-lesson1"
 },{
     id:2,
     exam:false,
-    name:"MMi3"
+    name:"chapter5-lesson2"
 },{
     id:3,
     exam:false,
-    name:"MSi3"
+    name:"chapter5-lesson3"
 },{
     id:4,
     exam:false,
-    name:"MRe3"
+    name:"chapter5-lesson4"
 },{
     id:5,
     exam:false,
-    name:"MFa3"
+    name:"chapter5-lesson5"
 },{
     id:6,
     exam:false,
-    name:"MLa3"
+    name:"chapter5-lesson6"
 },{
     id:101,
     exam:true,
@@ -239,27 +239,27 @@ export const chapter5 = [{
 },{
     id:7,
     exam:false,
-    name:"MDo2, MSol2"
+    name:"chapter5-lesson7"
 },{
     id:8,
     exam:false,
-    name:"MMi2"
+    name:"chapter5-lesson8"
 },{
     id:9,
     exam:false,
-    name:"MSi2"
+    name:"chapter5-lesson9"
 },{
     id:10,
     exam:false,
-    name:"MRe2"
+    name:"chapter5-lesson10"
 },{
     id:11,
     exam:false,
-    name:"MFa2"
+    name:"chapter5-lesson11"
 },{
     id:12,
     exam:false,
-    name:"MLa2"
+    name:"chapter5-lesson12"
 },{
     id:102,
     exam:true,
@@ -271,27 +271,27 @@ export const chapter5 = [{
 },{
     id:13,
     exam:false,
-    name:"MDo4, MSol4"
+    name:"chapter5-lesson13"
 },{
     id:14,
     exam:false,
-    name:"MMi4"
+    name:"chapter5-lesson14"
 },{
     id:15,
     exam:false,
-    name:"MSi4"
+    name:"chapter5-lesson15"
 },{
     id:16,
     exam:false,
-    name:"MRe4"
+    name:"chapter5-lesson16"
 },{
     id:17,
     exam:false,
-    name:"MFa4"
+    name:"chapter5-lesson17"
 },{
     id:18,
     exam:false,
-    name:"MLa4"
+    name:"chapter5-lesson18"
 },{
     id:104,
     exam:true,
@@ -309,27 +309,27 @@ export const chapter6 = [{
 },{
     id:1,
     exam:false,
-    name:"mDo3, mSol3"
+    name:"chapter6-lesson1"
 },{
     id:2,
     exam:false,
-    name:"mMi3"
+    name:"chapter6-lesson2"
 },{
     id:3,
     exam:false,
-    name:"mSi3"
+    name:"chapter6-lesson3"
 },{
     id:4,
     exam:false,
-    name:"mRe3"
+    name:"chapter6-lesson4"
 },{
     id:5,
     exam:false,
-    name:"mFa3"
+    name:"chapter6-lesson5"
 },{
     id:6,
     exam:false,
-    name:"mLa3"
+    name:"chapter6-lesson6"
 },{
     id:101,
     exam:true,
@@ -337,27 +337,27 @@ export const chapter6 = [{
 },{
     id:7,
     exam:false,
-    name:"mDo2, mSol2"
+    name:"chapter6-lesson7"
 },{
     id:8,
     exam:false,
-    name:"mMi2"
+    name:"chapter6-lesson8"
 },{
     id:9,
     exam:false,
-    name:"mSi2"
+    name:"chapter6-lesson9"
 },{
     id:10,
     exam:false,
-    name:"mRe2"
+    name:"chapter6-lesson10"
 },{
     id:11,
     exam:false,
-    name:"mFa2"
+    name:"chapter6-lesson11"
 },{
     id:12,
     exam:false,
-    name:"mLa2"
+    name:"chapter6-lesson12"
 },{
     id:102,
     exam:true,
@@ -369,27 +369,27 @@ export const chapter6 = [{
 },{
     id:13,
     exam:false,
-    name:"mDo4, mSol4"
+    name:"chapter6-lesson13"
 },{
     id:14,
     exam:false,
-    name:"mMi4"
+    name:"chapter6-lesson14"
 },{
     id:15,
     exam:false,
-    name:"mSi4"
+    name:"chapter6-lesson15"
 },{
     id:16,
     exam:false,
-    name:"mRe4"
+    name:"chapter6-lesson16"
 },{
     id:17,
     exam:false,
-    name:"mFa4"
+    name:"chapter6-lesson17"
 },{
     id:18,
     exam:false,
-    name:"mLa4"
+    name:"chapter6-lesson18"
 },{
     id:104,
     exam:true,
