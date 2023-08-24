@@ -1,12 +1,12 @@
 export const optionsList = [{ 
     name : "Language",
-    list: ["English", "Français", "Española"]
+    list: ["settings_language_english", "settings_language_french"]
 },{
     name: "Theme",
-    list:["Light", "Dark"]
+    list:["settings_theme_light", "settings_theme_dark"]
 },{
     name: "Color",
-    list: ["Red", "Blue","Green", "Yellow", "Orange", "Pink", "Purple"]
+    list: ["settings_color_red", "settings_color_blue","settings_color_green", "settings_color_Yellow", "settings_color_orange", "settings_color_pink", "settings_color_purple"]
 },{
     name: "Notation",
-    list: ["Alphabetic", "Syllabic"]}];
+    list: ["settings_notation_alphabetic", "settings_notation_syllabic"]}];

@@ -7,12 +7,20 @@ export const ColorContext = createContext();
 export const NotationContext = createContext();
 
 export function AppContextProvider ({children}){
-    const [Language, setLanguage] = useState(null);
+    const [Language, setLanguage] = useState("English");
     const [Theme, setTheme] = useState(null);
     const [Color, setColor] = useState(null);
     const [Notation, setNotation] = useState(null);
 
     useEffect(() => {
+        const fetchLanguageFromCookie = async () => {
+            try{
+                const languageFromCookie = await Cookies.get("Language");
+                setLanguage(languageFromCookie);
+            } catch(error){
+                console.error("Error cannot fetch Language Cookie");
+            }
+        };
         const fetchThemeFromCookie = async () => {
             try{
                 const themeFromCookie = await Cookies.get("Theme");
@@ -30,6 +38,7 @@ export function AppContextProvider ({children}){
             }
         };
 
+        fetchLanguageFromCookie();
         fetchThemeFromCookie();
         fetchColorFromCookie();
     }, []);

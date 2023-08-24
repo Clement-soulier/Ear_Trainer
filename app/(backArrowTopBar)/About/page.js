@@ -1,20 +1,22 @@
 'use client'
 import React, { useContext } from 'react';
 import BackArrowLayout from '../BackArrowTopBar';
-import { ThemeContext } from '../../component/context';
+import { LanguageContext, ThemeContext } from '../../component/context';
+import text from "/text.JSON"
 import './about.css'
 
 export default function Page(){
 
+    const {Language } = useContext(LanguageContext);
     const { Theme } = useContext(ThemeContext);
 
     return(
         <>
         <div className={`Background ${Theme}`}>
-            <BackArrowLayout title={"About"} />
+            <BackArrowLayout title={text[Language].about_topbar_title} />
             <div className='AboutScreen'>
-                <p className='AboutText'>Ear Trainer is a web app which the goal is to train absolute pitch, which is the ability to recognize a note by earing it. For this purpose this app propose lessons where note are played and the goal is to tell which one.</p>
-                <p className='AboutText'>This app is my very first project so it will be perfectible, if you have an observation or an ask to improve the app contact me :<a href='mailto:clement.soulier12@gmail.com'>here</a>.</p>
+                <p className='AboutText'>{text[Language].about_text}</p>
+                <p className='AboutText'>{text[Language].about_text2} <a href='mailto:clement.soulier12@gmail.com'>{text[Language].about_mail}</a></p>
             </div>
         </div>
         </>

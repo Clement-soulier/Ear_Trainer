@@ -1,13 +1,15 @@
 'use client'
 import React, { useContext } from 'react';
 import { chapter1 } from "./../chapters.js"
-import { ThemeContext, ColorContext } from '../../../component/context.js';
+import { LanguageContext, ThemeContext, ColorContext } from '../../../component/context.js';
 import BackArrowLayout from "../../BackArrowTopBar.js";
 import Link from 'next/link';
+import text from "/text.JSON"
 import "./../chapter.css"
 
 export default function Page(){
 
+    const { Language } = useContext(LanguageContext);
     const { Color } = useContext(ColorContext);
     const { Theme } = useContext(ThemeContext);
 
@@ -16,8 +18,8 @@ export default function Page(){
             return(
             <li key={chapter.id} className={`listItem ${Color}`}>
                 <Link href={"/InLesson"}>
-                    <h1 className='chapterId'>Exam {chapter.id - 100}</h1>
-                    <h2 className='chapterName'>{chapter.name}</h2>
+                    <h1 className='chapterId'>{text[Language].exam} {chapter.id - 100}</h1>
+                    <h2 className='chapterName'>{text[Language][chapter.name]}</h2>
                     <div className={`progression ${Theme}`}>00%</div>
                 </Link>
             </li>);
@@ -25,7 +27,7 @@ export default function Page(){
         else{
             return(<li key={chapter.id} className={`listItem ${Color}`}>
             <Link href={""}>
-                <h1 className="chapterId">Lesson {chapter.id + 1}</h1>
+                <h1 className="chapterId">{text[Language].lesson} {chapter.id + 1}</h1>
                 <h2 className="chapterName">{chapter.name}</h2>
                 <div className={`progression ${Theme}`}>00%</div>
             </Link>
@@ -36,7 +38,7 @@ export default function Page(){
     return(
         <>
         <div className= {`BackgroundChapter one ${Theme}`}>
-            <BackArrowLayout title={"First Octave"} />
+            <BackArrowLayout title={text[Language].chapter1_title} />
             <ul className="chaptersList">
                 {list}
             </ul>

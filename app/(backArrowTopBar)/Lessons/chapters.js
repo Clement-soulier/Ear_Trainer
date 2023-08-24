@@ -1,31 +1,31 @@
 export const chapters =[{
     id:0,
-    name:"Tuto",
-    description:"Learn to use the app !"
+    name:"chapter0_title",
+    description:"chapter0_desc"
 }, {
     id:1,
-    name:"First Octave",
-    description:"Learn to recognize your first octave !"
+    name:"chapter1_title",
+    description:"chapter1_desc"
 }, {
     id:2,
-    name:"Sharps and flats",
-    description: "Learn to recognize semitones !"
+    name:"chapter2_title",
+    description: "chapter2_desc"
 }, {
     id:3,
-    name: "Lower notes",
-    description:"Lower notes's turn !"
+    name: "chapter3_title",
+    description:"chapter3_desc"
 }, {
     id:4,
-    name:"higher notes",
-    description:"Higher notes's turn !"
+    name:"chapter4_title",
+    description:"chapter4_desc"
 }, {
     id:5,
-    name:"Majors chords",
-    description:"Let's recognize multiple notes in same time !"
+    name:"chapter5_title",
+    description:"chapter5_desc"
 }, {
     id:6,
-    name:"Minors chords",
-    description:"New chords !"
+    name:"chapter6_title",
+    description:"chapter6_desc"
 }]
 
 export const chapter1 =[{
@@ -55,13 +55,13 @@ export const chapter1 =[{
 }, {
     id:101,
     exam:true,
-    name:"3rd octave"
+    name:"chapter1_exam"
 }]
 
 export const chapter2 = [{
-    id:0,
-    exam:false,
-    name:"Explanations on sharps and flats"
+    id:100,
+    exam:true,
+    name:"chapter2_lesson0"
 },{
     id:1,
     exam:false,
@@ -81,11 +81,11 @@ export const chapter2 = [{
 },{
     id:101,
     exam:true,
-    name:"All sharps and flats from 3rd octave"
+    name:"chapter2_exam1"
 },{
     id:102,
     exam:true,
-    name:"All tones and semitones from 3rd octave"
+    name:"chapter2_exam2"
 }]
 
 export const chapter3 = [{
@@ -115,11 +115,11 @@ export const chapter3 = [{
 },{
     id:101,
     exam:true,
-    name:"2nd octave"
+    name:"chapter3_exam1"
 },{
     id:102,
     exam:true,
-    name:"2nd and 3rd octaves"
+    name:"chapter3_exam2"
 },{
     id:6,
     exam:false,
@@ -139,11 +139,11 @@ export const chapter3 = [{
 },{
     id:103,
     exam:true,
-    name:"All 2nd octave"
+    name:"chapter3_exam3"
 },{
     id:104,
     exam:true,
-    name:"All 2nd and 3rd octaves"
+    name:"chapter3_exam4"
 }]
 
 export const chapter4 = [{
@@ -173,11 +173,11 @@ export const chapter4 = [{
 },{
     id:101,
     exam:true,
-    name:"4th octave"
+    name:"chapter4_exam1"
 },{
     id:102,
     exam:true,
-    name:"2nd, 3rd and 4th octaves"
+    name:"chapter4_exam2"
 },{
     id:6,
     exam:false,
@@ -197,17 +197,17 @@ export const chapter4 = [{
 },{
     id:103,
     exam:true,
-    name:"All 4th octave"
+    name:"chapter4_exam3"
 },{
     id:104,
     exam:true,
-    name:"All 2nd, 3rd and 4th octave"
+    name:"chapter4_exam4"
 }]
 
 export const chapter5 = [{
-    id:0,
-    exam:false,
-    name:"Explanation on perfects majors chords"
+    id:100,
+    exam:true,
+    name:"chapter5_lesson0"
 },{
     id:1,
     exam:false,
@@ -235,7 +235,7 @@ export const chapter5 = [{
 },{
     id:101,
     exam:true,
-    name:"Perfect majors chords from 3rd octave"
+    name:"chapter5_exam1"
 },{
     id:7,
     exam:false,
@@ -263,11 +263,11 @@ export const chapter5 = [{
 },{
     id:102,
     exam:true,
-    name:"Perfect majors chords from 2nd octave"
+    name:"chapter5_exam2"
 },{
     id:103,
     exam:true,
-    name:"Perfect majors chords from 2nd and 3rd octaves"
+    name:"chapter5_exam3"
 },{
     id:13,
     exam:false,
@@ -295,17 +295,17 @@ export const chapter5 = [{
 },{
     id:104,
     exam:true,
-    name:"Perfect majors chords from 4th octave"
+    name:"chapter5_exam4"
 },{
     id:105,
     exam:true,
-    name:"Perfect majors chords from 2nd, 3rd and 4th octaves"
+    name:"chapter5_exam5"
 }]
 
 export const chapter6 = [{
-    id:0,
-    exam:false,
-    name:"Explanation on perfect minor chords"
+    id:100,
+    exam:true,
+    name:"chapter6_lesson0"
 },{
     id:1,
     exam:false,
@@ -333,7 +333,7 @@ export const chapter6 = [{
 },{
     id:101,
     exam:true,
-    name:"Perfect minor chords form 3rd octave"
+    name:"chapter6_exam1"
 },{
     id:7,
     exam:false,
@@ -361,11 +361,11 @@ export const chapter6 = [{
 },{
     id:102,
     exam:true,
-    name:"Perfect minor chords from 2nd octave"
+    name:"chapter6_exam2"
 },{
     id:103,
     exam:true,
-    name:"Perfect minor chords from 2nd and 3rd octaves"
+    name:"chapter6_exam3"
 },{
     id:13,
     exam:false,
@@ -393,9 +393,9 @@ export const chapter6 = [{
 },{
     id:104,
     exam:true,
-    name:"Perfect minor chords from 4th octave"
+    name:"chapter6_exam4"
 },{
     id:105,
     exam:true,
-    name:"Perfect minor chords from 2nd, 3rd and 4th octaves"
+    name:"chapter6_exam5"
 }]

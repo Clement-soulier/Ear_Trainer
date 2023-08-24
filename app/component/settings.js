@@ -3,22 +3,42 @@ import React, { useContext } from 'react';
 import { optionsList } from './settings_Data';
 import Image from 'next/image'
 import "./component.css"
+import text from "/text.JSON"
 import { LanguageContext, ThemeContext, ColorContext, NotationContext } from './context';
 import Cookies from 'js-cookie';
 
 
 function ButtonSettings({index, defaultOption, handler}){
 
+    const { Language } = useContext(LanguageContext);
     const { Theme } = useContext(ThemeContext);
     const { Color } = useContext(ColorContext);
 
     const list = optionsList[index].list.map((option, i) =>(
-        <option key={i} value={option}>{option}</option>
+        <option key={i} value={text.English[option]}>{text[Language][option]}</option>
         ));
+
+        let name;
+        switch (index){
+            case 0:
+                name = text[Language].settings_language;
+                break;
+            case 1:
+                name = text[Language].settings_theme;
+                break;
+            case 2:
+                name = text[Language].settings_color;
+                break;
+            case 3:
+                name = text[Language].settings_notation;
+                break;
+            default:
+                name = "Error";
+        }
         
         return(<li key ={index} className = {`settingsButtonBackground ${Color}Back`}>
             <div className = {`settingsButton ${Color}Button`}>
-                <h3 className = "settingsButtonTitle">{optionsList[index].name}</h3>
+                <h3 className = "settingsButtonTitle">{name}</h3>
                 <select className = {`settingsButtonSelection ${Theme}`} value={defaultOption} onChange={handler}>
                     {list}
                 </select>
@@ -70,7 +90,7 @@ export default function Settings({display, handleClick}){
         return(
             <div className = "settingsBackground">
                 <div className = {`settingsWindow ${Theme}`}>
-                    <h2 className = "settingsTitle">Settings</h2>
+                    <h2 className = "settingsTitle">{text[Language].settings_title}</h2>
                     <ul className = "settingsButtonList">
                         <ButtonSettings index = {0} defaultOption={Language} handler={LanguageHandler}/>
                         <ButtonSettings index = {1} defaultOption={Theme} handler={ThemeHandler}/>
