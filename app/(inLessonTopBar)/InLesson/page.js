@@ -14,19 +14,19 @@ export default function Page(){
         <>
         <div className={`Background ${Theme}`}>
             <div className='TopScreen'>
-                <InLessonTopBar title={"titre"} description={"description"} />
+                <InLessonTopBar title={"Lesson 1"} description={"C3, E3"} />
                 <p className='score'>Score: 0/20</p>
                 <Image alt='speaker' src="/mute-speaker.png" width={200} height={200}/>
-                <button className={`middleButton ${Color}`}>Start</button>
+                <button className={`middleButton ${Color}`}>Listen again</button>
             </div>
             <div className='bottomScreen'>
-                <button className={`toneButton ${Color}`}>Do</button>
-                <button className={`toneButton ${Color}`}>Ré</button>
-                <button className={`toneButton ${Color}`}>Mi</button>
-                <button className={`toneButton ${Color}`}>Fa</button>
-                <button className={`toneButton ${Color}`}>Sol</button>
-                <button className={`toneButton ${Color}`}>La</button>
-                <button className={`toneButton ${Color}`}>Si</button>
+                <button className={`toneButton ${Color}`}>C</button>
+                <button className={`toneButton ${Color}`}>D</button>
+                <button className={`toneButton ${Color}`}>E</button>
+                <button className={`toneButton ${Color}`}>F</button>
+                <button className={`toneButton ${Color}`}>G</button>
+                <button className={`toneButton ${Color}`}>A</button>
+                <button className={`toneButton ${Color}`}>B</button>
             </div>
         </div>
         </>

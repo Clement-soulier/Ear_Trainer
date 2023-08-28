@@ -19,7 +19,7 @@ export default function Page(){
         if(chapter.exam){
             return(
             <li key={chapter.id} className={`listItem ${Color}`}>
-                <Link href={""}>
+                <Link href={chapter.id - 100 == 0 ? "chapter6/ExplanationOnPerfectsMinorsChords" : ""}>
                     <h1 className='chapterId'>{chapter.id - 100 == 0 ? text[Language].lesson : text[Language].exam} {chapter.id - 100}</h1>
                     <div className='DivChapterName'>
                         <h2 className='chapterName'>{text[Language][chapter.name]}</h2>
