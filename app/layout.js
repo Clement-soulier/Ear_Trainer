@@ -6,25 +6,22 @@ import { useEffect } from 'react';
 import { AppContextProvider } from './component/context';
 import { StrictMode } from 'react';
 
-function cookiesExistenceCheck(){
-  return (
-    Cookies.get('Language') &&
-    Cookies.get('Theme') &&
-    Cookies.get('Color') &&
-    Cookies.get('Notation')
-  );
-}
-
-function createDefaultCookies() {
-  Cookies.set('Language', 'English', {expires: 365});
-  Cookies.set('Theme', 'Light', {expires: 365});
-  Cookies.set('Color', 'Red', {expires: 365});
-  Cookies.set('Notation', 'Alphabetic', {expires: 365});
-}
-
 function cookiesHandler(){
-  if(cookiesExistenceCheck() == undefined){
-    createDefaultCookies();
+  if(Cookies.get('Language') == undefined){
+    Cookies.set('Language', 'English', {expires: 365});
+  }
+  if(Cookies.get('Theme') == undefined){
+    Cookies.set('Theme', 'Light', {expires: 365});
+  }
+  if(Cookies.get('Color') == undefined){
+    Cookies.set('Color', 'Red', {expires: 365});
+  }
+  if(Cookies.get('Notation') == undefined){
+    Cookies.set('Notation', 'Alphabetic', {expires: 365});
+  }
+  if(Cookies.get("note") == undefined){
+    const defaultNoteList = [[0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]];
+    Cookies.set("Note", JSON.stringify(defaultNoteList), {expires: 365});
   }
 }
 

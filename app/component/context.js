@@ -1,16 +1,21 @@
+'use client'
 import React, { createContext, useState, useEffect } from 'react';
 import Cookies from 'js-cookie';
+
+const defaultNoteList = [[0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]];
 
 export const LanguageContext = createContext();
 export const ThemeContext = createContext();
 export const ColorContext = createContext();
 export const NotationContext = createContext();
+export const NoteContext = createContext();
 
 export function AppContextProvider ({children}){
     const [Language, setLanguage] = useState("English");
     const [Theme, setTheme] = useState(null);
     const [Color, setColor] = useState(null);
     const [Notation, setNotation] = useState("Alphabetic");
+    const [Note, setNote] = useState(defaultNoteList);
 
     useEffect(() => {
         const fetchLanguageFromCookie = async () => {
@@ -45,11 +50,20 @@ export function AppContextProvider ({children}){
                 console.error("Error cannot fetch Notation Cookie");
             }
         };
+        const fetchNoteFromCookie = async () => {
+            try{
+                const noteFromCookie = await Cookies.get("Note");
+                setNote(JSON.parse(noteFromCookie));
+            } catch(error){
+                console.error("Error cannot fetch Note Cookie");
+            }
+        }
 
         fetchLanguageFromCookie();
         fetchThemeFromCookie();
         fetchColorFromCookie();
         fetchNotationFromCookie();
+        fetchNoteFromCookie();
     }, []);
 
     return (
@@ -57,7 +71,9 @@ export function AppContextProvider ({children}){
         <ThemeContext.Provider value={{Theme, setTheme}}>
         <ColorContext.Provider value={{Color, setColor}}>
         <NotationContext.Provider value={{Notation, setNotation}}>
+        <NoteContext.Provider value={{Note, setNote}} >
             {children}
+        </NoteContext.Provider>
         </NotationContext.Provider>
         </ColorContext.Provider>
         </ThemeContext.Provider>

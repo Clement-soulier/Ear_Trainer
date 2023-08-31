@@ -1,12 +1,22 @@
 'use client'
 import React, { useContext } from 'react';
 import { chapter2 } from "./../chapters.js"
-import { LanguageContext, ThemeContext, ColorContext, NotationContext } from '../../../component/context.js';
+import { LanguageContext, ThemeContext, ColorContext, NotationContext, NoteContext } from '../../../component/context.js';
 import BackArrowLayout from "../../BackArrowTopBar.js";
 import Link from 'next/link';
 import text from "/text.JSON"
 import notation from "/notation.json"
 import './../chapter.css';
+
+function percentage(id, noteList){
+    let total;
+    if (chapter2[id].exam == true) {
+        total = 50;
+    } else {
+        total = 20;
+    }
+    return Math.round((100*noteList[2][id])/total)
+}
 
 export default function Page(){
 
@@ -14,6 +24,7 @@ export default function Page(){
     const { Color } = useContext(ColorContext);
     const { Theme } = useContext(ThemeContext);
     const { Notation } = useContext(NotationContext);
+    const { Note } = useContext(NoteContext);
 
     const list = chapter2.map(chapter =>{
         if(chapter.exam){
@@ -24,7 +35,7 @@ export default function Page(){
                     <div className='DivChapterName'>
                         <h2 className='chapterName'>{text[Language][chapter.name]}</h2>
                     </div>
-                    <div className={`progression ${Theme}`}>00%</div>
+                    <div className={`progression ${Theme}`}>{chapter.id - 100 == 0 ? percentage(chapter.id-100, Note)+"%" : percentage(chapter.id-96, Note)+"%"}</div>
                 </Link>
             </li>);
         }
@@ -35,7 +46,7 @@ export default function Page(){
                 <div className='DivChapterName'>
                     <h2 className="chapterName">{notation[Notation][chapter.name]}</h2>
                 </div>
-                <div className={`progression ${Theme}`}>00%</div>
+                <div className={`progression ${Theme}`}>{percentage(chapter.id, Note) + "%"}</div>
             </Link>
         </li>);
         }
