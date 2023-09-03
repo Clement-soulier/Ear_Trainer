@@ -9,6 +9,7 @@ export const ThemeContext = createContext();
 export const ColorContext = createContext();
 export const NotationContext = createContext();
 export const NoteContext = createContext();
+export const LessonContext = createContext();
 
 export function AppContextProvider ({children}){
     const [Language, setLanguage] = useState("English");
@@ -16,6 +17,7 @@ export function AppContextProvider ({children}){
     const [Color, setColor] = useState(null);
     const [Notation, setNotation] = useState("Alphabetic");
     const [Note, setNote] = useState(defaultNoteList);
+    const [Lesson, setLesson] = useState({title: "", description: "", notes: [], chapter: [], lesson: [], sharp: false, exam: false})
 
     useEffect(() => {
         const fetchLanguageFromCookie = async () => {
@@ -72,7 +74,9 @@ export function AppContextProvider ({children}){
         <ColorContext.Provider value={{Color, setColor}}>
         <NotationContext.Provider value={{Notation, setNotation}}>
         <NoteContext.Provider value={{Note, setNote}} >
+        <LessonContext.Provider value={{Lesson, setLesson}} >
             {children}
+        </LessonContext.Provider>
         </NoteContext.Provider>
         </NotationContext.Provider>
         </ColorContext.Provider>

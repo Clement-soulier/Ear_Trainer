@@ -19,7 +19,7 @@ function cookiesHandler(){
   if(Cookies.get('Notation') == undefined){
     Cookies.set('Notation', 'Alphabetic', {expires: 365});
   }
-  if(Cookies.get("note") == undefined){
+  if(Cookies.get("Note") == undefined){
     const defaultNoteList = [[0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]];
     Cookies.set("Note", JSON.stringify(defaultNoteList), {expires: 365});
   }
