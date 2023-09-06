@@ -11,6 +11,20 @@
     color: white;
 }
 
+.titleDescriptionDiv{
+    position: relative;
+    bottom: 0px;
+    left: 50px;
+}
+
+.descriptionDiv{
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    margin-top: 20px;
+    width: 250px;
+}
+
 .backArrow:hover{
     cursor: pointer;
 }
@@ -22,18 +36,17 @@
 
 .InLessonTopBarTitle{
     position: absolute;
-    left: 55px;
-    bottom: 3px;
+    left: 0px;
+    top: 0px;
+    margin-top: 0px;
     font-size: 20px;
     font-family: 'Gothic A1', sans-serif;
 }
 
 .InLessonTopBarDescription{
-    position: relative;
-    left: 55px;
-    top: 12px;
     font-size: 15px;
     font-family: 'Gothic A1', sans-serif;
+    margin: 0px;
 }
 
 .RedT{
