@@ -2,7 +2,7 @@
 import React, { useContext } from 'react';
 import BackArrowLayout from '../BackArrowTopBar';
 import { LanguageContext, ThemeContext } from '../../component/context';
-import text from "/text.JSON"
+import text from "/text.json"
 import './about.css'
 
 export default function Page(){

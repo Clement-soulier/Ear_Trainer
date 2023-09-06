@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { optionsList } from './settings_Data';
 import Image from 'next/image'
 import "./component.css"
-import text from "/text.JSON"
+import text from "/text.json"
 import { LanguageContext, ThemeContext, ColorContext, NotationContext } from './context';
 import Cookies from 'js-cookie';
 

@@ -4,7 +4,7 @@ import TopBarHome from "./component/topBarHome.js";
 import './home.css';
 import Link from 'next/link';
 import Image from 'next/image'
-import text from "/text.JSON"
+import text from "/text.json"
 import { LanguageContext, ThemeContext, ColorContext } from './component/context.js';
 
 export default function Page() {

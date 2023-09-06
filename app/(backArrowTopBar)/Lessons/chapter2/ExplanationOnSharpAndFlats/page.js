@@ -4,7 +4,7 @@ import { LanguageContext, ThemeContext, ColorContext, NoteContext } from '../../
 import BackArrowTopBar from '../../../BackArrowTopBar.js';
 import { useRouter } from 'next/navigation'
 import Cookies from 'js-cookie';
-import text from "/text.JSON"
+import text from "/text.json"
 import Image from 'next/image'
 import "./../../chapter0/tutorial.css"
 

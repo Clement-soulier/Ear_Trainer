@@ -4,7 +4,7 @@ import { chapters, chapter0, chapter1, chapter2, chapter3, chapter4, chapter5, c
 import { LanguageContext, ThemeContext, ColorContext, NoteContext } from '../../component/context.js';
 import BackArrowLayout from "../BackArrowTopBar";
 import './chapter.css'
-import text from "/text.JSON"
+import text from "/text.json"
 import Link from 'next/link';
 
 function percentage(id, noteList) {

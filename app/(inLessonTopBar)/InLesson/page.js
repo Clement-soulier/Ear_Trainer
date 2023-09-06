@@ -4,7 +4,7 @@ import InLessonTopBar from '../InLessonTopBar.js';
 import { useRouter } from 'next/navigation'
 import { LanguageContext, ThemeContext, ColorContext, NotationContext, NoteContext, LessonContext } from '../../component/context.js';
 import { soundList } from './soundList.js';
-import text from "/text.JSON"
+import text from "/text.json"
 import notation from "/notation.json"
 import Cookies from 'js-cookie';
 import "./InLesson.css"

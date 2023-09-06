@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { LanguageContext, ThemeContext, ColorContext, NoteContext } from '../../../component/context.js';
 import { useRouter } from 'next/navigation'
 import BackArrowLayout from "../../BackArrowTopBar.js";
-import text from "/text.JSON"
+import text from "/text.json"
 import Image from 'next/image'
 import "./tutorial.css"
 import Cookies from 'js-cookie';
