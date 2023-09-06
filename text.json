@@ -82,6 +82,7 @@
     "chapter6_exam3" : "Accords parfaits mineurs des octaves 2 et 3",
     "chapter6_exam4" : "Accords parfait mineurs de l'octave 4",
     "chapter6_exam5" : "Accords parfaits mineurs des octaves 2, 3 et 4",
+    "lesson_backList" : "Retour à la liste de leçons",
     "lesson_relisten" : "Réecouter",
     "lesson_start" : "Commencer"
     },
@@ -169,6 +170,7 @@
         "chapter6_exam3" : "Perfect minor chords from 2nd and 3rd octaves",
         "chapter6_exam4" : "Perfect minor chords from 4th octave",
         "chapter6_exam5" : "Perfect minor chords from 2nd, 3rd and 4th octaves",
+        "lesson_backList" : "Back to lesson list",
         "lesson_relisten" : "Listen again",
         "lesson_start" : "Start"
     }

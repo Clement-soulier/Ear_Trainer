@@ -14,6 +14,22 @@
     right: 10px;
 }
 
+.good{
+    color: green;
+}
+
+.bad{
+    color: red;
+}
+
+#displayNote{
+    margin-top: 55px;
+    margin-bottom: 30px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+}
+
 .middleButton{
     display: flex;
     justify-content: center;

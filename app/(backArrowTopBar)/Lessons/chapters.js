@@ -94,42 +94,42 @@ export const chapter2 = [{
     exam:false,
     num: 1,
     sharp: true,
-    notes: ["Do3#", "Sol3#"],
+    notes: ["DoSharp3", "SolSharp3"],
     name:"chapter2-lesson1",
 },{
     id:2,
     exam:false,
     num: 2,
     sharp: true,
-    notes: ["Do3#", "Fa3#", "Sol3#"],
+    notes: ["DoSharp3", "FaSharp3", "SolSharp3"],
     name:"chapter2-lesson2"
 },{
     id:3,
     exam:false,
     num: 3,
     sharp: true,
-    notes: ["Do3#", "Re3#", "Fa3#", "Sol3#"],
+    notes: ["DoSharp3", "ReSharp3", "FaSharp3", "SolSharp3"],
     name:"chapter2-lesson3"
 },{
     id:4,
     exam:false,
     num: 4,
     sharp: true,
-    notes: ["Do3#", "Re3#", "Fa3#", "Sol3#", "La3#"],
+    notes: ["DoSharp3", "ReSharp3", "FaSharp3", "SolSharp3", "LaSharp3"],
     name:"chapter2-lesson4"
 },{
     id:5,
     exam:true,
     num: 1,
     sharp: true,
-    notes: ["Do3#", "Re3#", "Fa3#", "Sol3#", "La3#"],
+    notes: ["DoSharp3", "ReSharp3", "FaSharp3", "SolSharp3", "LaSharp3"],
     name:"chapter2_exam1"
 },{
     id:6,
     exam:true,
     num: 2,
     sharp: true,
-    notes: ["Do3", "Re3", "Mi3", "Fa3", "Sol3", "La3", "Si3", "Do3#", "Re3#", "Fa3#", "Sol3#", "La3#"],
+    notes: ["Do3", "Re3", "Mi3", "Fa3", "Sol3", "La3", "Si3", "DoSharp3", "ReSharp3", "FaSharp3", "SolSharp3", "LaSharp3"],
     name:"chapter2_exam2"
 }]
 
@@ -193,42 +193,42 @@ export const chapter3 = [{
     id:8,
     exam:false,
     num: 7,
-    note: ["Do2#", "Sol2#"],
+    notes: ["DoSharp2", "SolSharp2"],
     sharp: true,
     name:"chapter3-lesson7"
 },{
     id:9,
     exam:false,
     num: 8,
-    note: ["Do2#", "Fa2", "Sol2#"],
+    notes: ["DoSharp2", "FaSharp2", "SolSharp2"],
     sharp: true,
     name:"chapter3-lesson8"
 },{
     id:10,
     exam:false,
     num: 9,
-    note: ["Do2#", "Re2#", "Fa2", "Sol2#"],
+    notes: ["DoSharp2", "ReSharp2", "FaSharp2", "SolSharp2"],
     sharp: true,
     name:"chapter3-lesson9"
 },{
     id:11,
     exam:false,
     num: 10,
-    note: ["Do2#", "Re2#", "Fa2", "Sol2#", "La2#"],
+    notes: ["DoSharp2", "ReSharp2", "FaSharp2", "SolSharp2", "LaSharp2"],
     sharp: true,
     name:"chapter3-lesson10"
 },{
     id:12,
     exam:true,
     num: 3,
-    note: ["Do2", "Re2", "Mi2", "Fa2", "Sol2", "La2", "Si2", "Do2#", "Re2#", "Fa2", "Sol2#", "La2#"],
+    notes: ["Do2", "Re2", "Mi2", "Fa2", "Sol2", "La2", "Si2", "DoSharp2", "ReSharp2", "FaSharp2", "SolSharp2", "LaSharp2"],
     sharp: true,
     name:"chapter3_exam3"
 },{
     id:13,
     exam:true,
     num: 4,
-    note: ["Do2", "Re2", "Mi2", "Fa2", "Sol2", "La2", "Si2", "Do2#", "Re2#", "Fa2", "Sol2#", "La2#", "Do3", "Re3", "Mi3", "Fa3", "Sol3", "La3", "Si3", "Do3#", "Re3#", "Fa3#", "Sol3#", "La3#"],
+    notes: ["Do2", "Re2", "Mi2", "Fa2", "Sol2", "La2", "Si2", "DoSharp2", "ReSharp2", "FaSharp2", "SolSharp2", "LaSharp2", "Do3", "Re3", "Mi3", "Fa3", "Sol3", "La3", "Si3", "DoSharp3", "ReSharp3", "FaSharp3", "SolSharp3", "LaSharp3"],
     sharp: true,
     name:"chapter3_exam4"
 }]
@@ -293,42 +293,42 @@ export const chapter4 = [{
     id:8,
     exam:false,
     num: 7,
-    notes: ["Do4#", "Sol4#"],
+    notes: ["DoSharp4", "SolSharp4"],
     sharp: true,
     name:"chapter4-lesson7"
 },{
     id:9,
     exam:false,
     num: 8,
-    notes: ["Do4#", "Fa4#", "Sol4#"],
+    notes: ["DoSharp4", "FaSharp4", "SolSharp4"],
     sharp: true,
     name:"chapter4-lesson8"
 },{
     id:10,
     exam:false,
     num: 9,
-    notes: ["Do4#", "Re4#", "Fa4#", "Sol4#"],
+    notes: ["DoSharp4", "ReSharp4", "FaSharp4", "SolSharp4"],
     sharp: true,
     name:"chapter4-lesson9"
 },{
     id:11,
     exam:false,
     num: 10,
-    notes: ["Do4#", "Re4#", "Fa4#", "Sol4#", "La4#"],
+    notes: ["DoSharp4", "ReSharp4", "FaSharp4", "SolSharp4", "LaSharp4"],
     sharp: true,
     name:"chapter4-lesson10"
 },{
     id:12,
     exam:true,
     num: 3,
-    notes: ["Do4", "Re4", "Mi4", "Fa4", "Sol4", "La4", "Si4", "Do4#", "Re4#", "Fa4#", "Sol4#", "La4#"],
+    notes: ["Do4", "Re4", "Mi4", "Fa4", "Sol4", "La4", "Si4", "DoSharp4", "ReSharp4", "FaSharp4", "SolSharp4", "LaSharp4"],
     sharp: true,
     name:"chapter4_exam3"
 },{
     id:13,
     exam:true,
     num: 4,
-    notes: ["Do2", "Re2", "Mi2", "Fa2", "Sol2", "La2", "Si2", "Do2#", "Re2#", "Fa2#", "Sol2#", "La2#", "Do3", "Re3", "Mi3", "Fa3", "Sol3", "La3", "Si3", "Do3#", "Re3#", "Fa3#", "Sol3#", "La3#", "Do4", "Re4", "Mi4", "Fa4", "Sol4", "La4", "Si4", "Do4#", "Re4#", "Fa4#", "Sol4#", "La4#"],
+    notes: ["Do2", "Re2", "Mi2", "Fa2", "Sol2", "La2", "Si2", "DoSharp2", "ReSharp2", "FaSharp2", "SolSharp2", "LaSharp2", "Do3", "Re3", "Mi3", "Fa3", "Sol3", "La3", "Si3", "DoSharp3", "ReSharp3", "FaSharp3", "SolSharp3", "LaSharp3", "Do4", "Re4", "Mi4", "Fa4", "Sol4", "La4", "Si4", "DoSharp4", "ReSharp4", "FaSharp4", "SolSharp4", "LaSharp4"],
     sharp: true,
     name:"chapter4_exam4"
 }]
