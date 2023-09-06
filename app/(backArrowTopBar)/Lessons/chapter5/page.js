@@ -5,7 +5,7 @@ import { chapter5 } from "./../chapters.js"
 import { LanguageContext, ThemeContext, ColorContext, NotationContext, NoteContext, LessonContext } from '../../../component/context.js';
 import BackArrowLayout from "../../BackArrowTopBar.js";
 import Link from 'next/link';
-import text from "/text.JSON"
+import text from "/text.json"
 import notation from "/notation.json"
 import './../chapter.css';
 
