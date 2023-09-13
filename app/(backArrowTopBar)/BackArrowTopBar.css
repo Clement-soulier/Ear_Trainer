@@ -27,21 +27,22 @@
     font-family: 'Gothic A1', sans-serif;
 }
 
-@media (max-width: 375px){
+@media (max-width: 426px){
     .BackArrowTopBarTitle{
         position: absolute;
         left: 55px;
         bottom: -5px;
         font-family: 'Gothic A1', sans-serif;
-        font-size: 25px;
+        font-size: 15px;
+        margin-bottom: 20px;
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 321px){
     .BackArrowTopBarTitle{
         position: absolute;
         left: 55px;
-        bottom: 1px;
+        bottom: 0px;
         font-family: 'Gothic A1', sans-serif;
         font-size: 20px;
     }

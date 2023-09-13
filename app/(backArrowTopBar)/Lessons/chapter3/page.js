@@ -84,13 +84,13 @@ export default function Page(){
     })
 
     return(
-        <>
-        <div className={`BackgroundChapter three ${Theme}`}>
-            <BackArrowLayout title={text[Language].chapter3_title} />
-            <ul className="chaptersList">
-                {list}
-            </ul>
-        </div>
-        </>
+        <body className={`${Theme}`}>
+            <div className={`BackgroundChapter three ${Theme}`}>
+                <BackArrowLayout title={text[Language].chapter3_title} />
+                <ul className="chaptersList">
+                    {list}
+                </ul>
+            </div>
+        </body>
     );
 }

@@ -78,13 +78,13 @@ const list = chapters.map(chapter =>
     </li>)
 
     return(
-        <>
+        <body className={`${Theme}`}>
         <div className= {`BackgroundChapter ${Theme}`}>
             <BackArrowLayout title={text[Language].chapter_title} />
             <ul className="chaptersList">
                 {list}
             </ul>
         </div>
-        </>
+        </body>
     );
 }

@@ -11,7 +11,7 @@ export default function Page(){
     const { Theme } = useContext(ThemeContext);
 
     return(
-        <>
+        <body className={`${Theme}`}>
         <div className={`Background ${Theme}`}>
             <BackArrowLayout title={text[Language].about_topbar_title} />
             <div className='AboutScreen'>
@@ -19,6 +19,6 @@ export default function Page(){
                 <p className='AboutText'>{text[Language].about_text2} <a href='mailto:clement.soulier12@gmail.com'>{text[Language].about_mail}</a></p>
             </div>
         </div>
-        </>
+        </body>
     );
 }

@@ -13,8 +13,8 @@ export const LessonContext = createContext();
 
 export function AppContextProvider ({children}){
     const [Language, setLanguage] = useState("English");
-    const [Theme, setTheme] = useState(null);
-    const [Color, setColor] = useState(null);
+    const [Theme, setTheme] = useState("Light");
+    const [Color, setColor] = useState("Red");
     const [Notation, setNotation] = useState("Alphabetic");
     const [Note, setNote] = useState(defaultNoteList);
     const [Lesson, setLesson] = useState({title: "", description: "", notes: [], chapter: [], lesson: [], sharp: false, exam: false})
@@ -23,41 +23,62 @@ export function AppContextProvider ({children}){
         const fetchLanguageFromCookie = async () => {
             try{
                 const languageFromCookie = await Cookies.get("Language");
-                setLanguage(languageFromCookie);
+                if(languageFromCookie == undefined){
+                    Cookies.set('Language', 'English', {expires: 365});
+                    setLanguage("English");
+                } else{
+                    setLanguage(languageFromCookie);
+                }
             } catch(error){
-                console.error("Error cannot fetch Language Cookie");
+                console.error("Cannot fetch language Cookie")
             }
         };
         const fetchThemeFromCookie = async () => {
             try{
                 const themeFromCookie = await Cookies.get("Theme");
+                if(themeFromCookie == undefined){
+                    Cookies.set('Theme', 'Light', {expires: 365});
+                    setTheme("Light");
+                }
                 setTheme(themeFromCookie);
             } catch (error){
-                console.error("Error cannot fetch Theme Cookie");
+                console.error("Cannot fetch Theme from Cookie");
             }
         };
         const fetchColorFromCookie = async () => {
             try {
                 const colorFromCookie = await Cookies.get("Color");
+                if(colorFromCookie == undefined){
+                    Cookies.set('Color', 'Red', {expires: 365});
+                    setColor('Red');
+                }
                 setColor(colorFromCookie);
             } catch (error) {
-                console.error("Error cannot fetch Color Cookie");
+                console.error("Cannot fetch color Cookie");
             }
         };
         const fetchNotationFromCookie = async () => {
             try{
                 const notationFromCookie = await Cookies.get("Notation");
+                if(notationFromCookie == undefined){
+                    Cookies.set('Notation', 'Alphabetic', {expires: 365});
+                    setNotation('Alphabetic');
+                }
                 setNotation(notationFromCookie);
             } catch (error) {
-                console.error("Error cannot fetch Notation Cookie");
+                console.error("Cannot fetch notation Cookie");
             }
         };
         const fetchNoteFromCookie = async () => {
             try{
                 const noteFromCookie = await Cookies.get("Note");
+                if(noteFromCookie == undefined){
+                    Cookies.set("Note", JSON.stringify(defaultNoteList), {expires: 365});
+                    setNote(defaultNoteList);
+                }
                 setNote(JSON.parse(noteFromCookie));
             } catch(error){
-                console.error("Error cannot fetch Note Cookie");
+                console.error("Cannot fetch note Cookie");
             }
         }
 

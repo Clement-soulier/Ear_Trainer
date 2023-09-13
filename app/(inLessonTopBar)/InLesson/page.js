@@ -129,7 +129,7 @@ function toneButtonClickHandler(note){
 }
 
     return(
-        <>
+        <body className={`${Theme}`}>
         <div className={`Background ${Theme}`}>
             <div className='TopScreen'>
                 <InLessonTopBar title={Lesson.title} description={Lesson.description} />
@@ -164,6 +164,6 @@ function toneButtonClickHandler(note){
                 )}
             </div>
         </div>
-        </>
+        </body>
     );
 }

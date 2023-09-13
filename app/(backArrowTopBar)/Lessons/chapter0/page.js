@@ -36,18 +36,20 @@ export default function Page(){
     }
 
     return(
-        <div className= {`BackgroundTutorial ${Theme}`}>
-            <BackArrowLayout title={text[Language].chapter0_title} />
-            <div className='screen'>
-                    <p className='text'>{text[Language].chapter0_text1}</p>
-                    <Image className='IllustrationImage' src={"/tutorial1.png"} alt='Illustration Image' width={250} height={250}/>
-                    <p className='text'>{text[Language].chapter0_text2}</p>
-                    <p className='text'>{text[Language].chapter0_text3}</p>
-                    <Image className='IllustrationImage' src={"/tutorial2.png"} alt='Illustration Image' width={250} height={250}/>
-                    <p className='text'>{text[Language].chapter0_text4}</p>
-                    <Image className='IllustrationImage' src={"/tutorial3.png"} alt='Illustration Image' width={250} height={250}/>
-                    <button className={`button ${Color} tutorialButton`} onClick={() => {clickHandler()}}>{text[Language].lesson0_button}</button>
+        <body className={`${Theme}`}>
+            <div className= {`BackgroundTutorial ${Theme}`}>
+                <BackArrowLayout title={text[Language].chapter0_title} />
+                <div className='screen'>
+                        <p className='text'>{text[Language].chapter0_text1}</p>
+                        <Image className='IllustrationImage' src={"/tutorial1.png"} alt='Illustration Image' width={250} height={250}/>
+                        <p className='text'>{text[Language].chapter0_text2}</p>
+                        <p className='text'>{text[Language].chapter0_text3}</p>
+                        <Image className='IllustrationImage' src={"/tutorial2.png"} alt='Illustration Image' width={250} height={250}/>
+                        <p className='text'>{text[Language].chapter0_text4}</p>
+                        <Image className='IllustrationImage' src={"/tutorial3.png"} alt='Illustration Image' width={250} height={250}/>
+                        <button className={`button ${Color} tutorialButton`} onClick={() => {clickHandler()}}>{text[Language].lesson0_button}</button>
+                </div>
             </div>
-        </div>
+        </body>
     );
 }

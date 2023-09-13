@@ -36,16 +36,18 @@ export default function Page(){
     }
 
     return(
-        <div className= {`BackgroundChapter2Lesson0 ${Theme}`}>
-            <BackArrowTopBar title={text[Language].chapter2_lesson0}/>
-            <div className='screen'>
-                <p className='text'>{text[Language].chapter2_lesson0_text1}</p>
-                <p className='text'>{text[Language].chapter2_leeson0_text2}</p>
-                <p className='text'>{text[Language].chapter2_lesson0_text3}</p>
-                <Image className='IllustrationImage' src={"/sharpAndFlatsTuto.png"} alt='Illustration Image' width={100} height={100}/>
-                <p className='text'>{text[Language].chapter2_lesson0_text4}</p>
-                <button className={`button ${Color} tutorialButton`} onClick={() => {clickHandler()}}>{text[Language].lesson0_button}</button>
+        <body className={`${Theme}`}>
+            <div className= {`BackgroundChapter2Lesson0 ${Theme}`}>
+                <BackArrowTopBar title={text[Language].chapter2_lesson0}/>
+                <div className='screen'>
+                    <p className='text'>{text[Language].chapter2_lesson0_text1}</p>
+                    <p className='text'>{text[Language].chapter2_leeson0_text2}</p>
+                    <p className='text'>{text[Language].chapter2_lesson0_text3}</p>
+                    <Image className='IllustrationImage' src={"/sharpAndFlatsTuto.png"} alt='Illustration Image' width={100} height={100}/>
+                    <p className='text'>{text[Language].chapter2_lesson0_text4}</p>
+                    <button className={`button ${Color} tutorialButton`} onClick={() => {clickHandler()}}>{text[Language].lesson0_button}</button>
+                </div>
             </div>
-        </div>
+        </body>
     );
 }

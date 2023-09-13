@@ -80,13 +80,13 @@ export default function Page(){
     })
 
     return(
-        <>
+        <body className={`${Theme}`}>
         <div className= {`BackgroundChapter one ${Theme}`}>
             <BackArrowLayout title={text[Language].chapter1_title} />
             <ul className="chaptersList">
                 {list}
             </ul>
         </div>
-        </>
+        </body>
     );
 }

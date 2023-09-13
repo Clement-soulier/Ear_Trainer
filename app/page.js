@@ -1,5 +1,5 @@
 'use client'
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import TopBarHome from "./component/topBarHome.js";
 import './home.css';
 import Link from 'next/link';
@@ -13,6 +13,15 @@ export default function Page() {
   const { Color } = useContext(ColorContext);
   const { Theme } = useContext(ThemeContext);
 
+  const [windowWidth, setWindowWidth] = useState(null);
+
+  useEffect(() => {
+    // Vérifier si nous sommes côté client
+    if (typeof window !== 'undefined') {
+      setWindowWidth(window.innerWidth);
+    }
+  }, []);
+
   function LogoSrc(Theme){
     if(Theme == "Dark"){
       return "/logo-dark.png";
@@ -23,16 +32,16 @@ export default function Page() {
   }
 
     return (
-      <>
+      <body className={`${Theme}`}>
         <div className={`Background ${Theme}`}>
           <TopBarHome />
           <div className="HomeScreen">
-            <Image className="logo" src={`${LogoSrc(Theme)}`} alt="logo-light" width={250} height={250}/>
+            <Image className="logo" src={`${LogoSrc(Theme)}`} alt="logo-light" width={windowWidth<= 425 ? 150 : 250} height={windowWidth<= 425 ? 150 : 250}/>
             <Link href={"/Lessons"} className={`button ${Color}`}>{text[Language].home_lesson}</Link>
             <Link href={'/About'} className={`button ${Color}`}>{text[Language].home_about}</Link>
             <Link href={"mailto:clement.soulier12@gmail.com"} className={`button ${Color}`}>{text[Language].home_contact}</Link>
           </div>
         </div>
-      </>
+      </body>
     );
   }

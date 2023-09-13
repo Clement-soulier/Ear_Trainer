@@ -16,11 +16,14 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 380px;
 }
 
 .BackgroundTutorial{
     position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -29,6 +32,9 @@
 
 .BackgroundChapter2Lesson0{
     position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -37,4 +43,10 @@
 
 .tutorialButton{
     margin-top: 60px;
+}
+
+@media (max-width: 376px) {
+    .screen{
+        width: 300px;
+    }
 }
